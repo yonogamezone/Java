@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://diwaspin.win/preview.jpg" />
+    <meta
+      property="og:image:alt"
+      content="🎰DiwaSpin पर खेलें सबसे लोकप्रिय स्लॉट गेम!🔥
+
+🎁शानदार बोनस 💰| Fast Withdrawal | 🔐 Safe Payment 🚀 
+
+आज ही जुड़ें 🎉 और शानदार Rewards का आनंद लें!🏆"
+    />
+    <meta
+      property="og:description"
+      content="🎰DiwaSpin पर खेलें सबसे लोकप्रिय स्लॉट गेम!🔥
+
+🎁शानदार बोनस 💰| Fast Withdrawal | 🔐 Safe Payment 🚀 
+
+आज ही जुड़ें 🎉 और शानदार Rewards का आनंद लें!🏆"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="https://diwaspin.win/preview.jpg" />
+    <title>DiwaSpin</title>
+
+    <style>
+      /* --- 全局基础样式 --- */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        display: flex;
+        align-items: center;
+      }
+
+      .bodyC {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #020028;
+      }
+      .content {
+        width: 100%;
+        background-image: url("./assets/images/789rbbg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+      }
+
+      /* --- 各模块布局样式 --- */
+      .bannerImps,
+      .hotgame,
+      .hotgamebtn,
+      .jackpotbtn,
+      .three2403 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      /* 移动端默认偏移量 (1:1 还原你 SCSS 中的设置) */
+      .hotgame img {
+        width: 100%;
+        margin-top: -350px;
+      }
+      .hotgamebtn img {
+        width: 47%;
+        margin-top: -280px;
+        cursor: pointer;
+      }
+
+      .jackpot {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 82px;
+        width: 100%;
+      }
+      .jackpot .contentjack {
+        position: relative;
+        width: 90%;
+        height: 850px;
+        margin: auto;
+        background-image: url("./assets/images/jb1.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+      }
+      .jackpot .contentjack .danmu {
+        width: 100%;
+        height: 721px;
+        box-sizing: border-box;
+        margin-top: 150px;
+      }
+
+      .jackpotbtn img {
+        width: 47%;
+        margin-top: -60px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .three2403 {
+        margin-top: 50px;
+      }
+      .three2403 img {
+        width: 90%;
+      }
+
+      .bt-bg {
+        margin-top: 60px;
+        margin-bottom: 180px;
+        padding: 15px 0;
+      }
+      .two {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .twoicon {
+        display: flex;
+        width: 80%;
+      }
+      .twoicon img {
+        width: 120px;
+      }
+      .twoicon span {
+        color: #fff;
+        font-family: Arial;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 120px;
+        margin-left: 16px;
+      }
+
+      .last {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+        font-family: Arial;
+        font-size: 12px;
+        line-height: 36px;
+      }
+      .last img {
+        width: 80%;
+        margin-left: 10%;
+      }
+      .last .lastdiv {
+        width: 80%;
+        margin-left: 10%;
+        color: #fff;
+        font-family: Inter;
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 400;
+      }
+      .last .lastdiv p {
+        color: #fff;
+        font-size: 36px;
+        margin: 10px 0;
+      }
+
+      /* --- 响应式媒体查询：PC端 (min-width: 768px) --- */
+      @media screen and (min-width: 768px) {
+        .bodyC {
+          background: #020028;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: auto;
+        }
+
+        .content {
+          width: 600px;
+          min-width: 600px;
+          margin: 0 auto;
+          background-image: url("./assets/images/789rbbg.jpg");
+          background-repeat: no-repeat;
+          box-sizing: border-box;
+          background-size: 100% auto;
+        }
+        .content .title img {
+          margin-right: 5px;
+        }
+        .content .down3 {
+          margin-top: -88px;
+        }
+        .content .down3 img {
+          width: 100%;
+        }
+        .content .bannerImps img {
+          width: 100%;
+          margin-top: -65px;
+        }
+        .content .hotgame img {
+          margin-top: -2% !important;
+        }
+        .content .hotgamebtn img {
+          margin-top: -140px;
+        }
+        .content .jackpot {
+          margin-top: 22px;
+        }
+        .content .contentjack {
+          height: 520px;
+        }
+        .content .contentjack .danmu {
+          height: 321px;
+          margin-top: 50px;
+        }
+        .content .jackpotbtn img {
+          margin-top: -230px;
+          margin-bottom: 0px;
+        }
+        .content .three2403 {
+          margin-top: -45px;
+        }
+        .content .bt-bg {
+          width: 100%;
+          margin-top: 30px;
+          margin-bottom: 100px;
+        }
+        .content .twoicon {
+          width: 90%;
+        }
+        .content .twoicon img {
+          width: 50px;
+        }
+        .content .twoicon span {
+          font-size: 24px;
+          line-height: 50px;
+        }
+        .content .last {
+          margin-top: 20px;
+          width: 100%;
+        }
+        .content .last img {
+          width: 90%;
+          margin-left: 5%;
+        }
+        .content .last .lastdiv {
+          width: 90%;
+          margin-left: 5%;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .content .last .lastdiv p {
+          font-size: 20px;
+        }
+        .content .title {
+          width: 100%;
+          background-color: #536bc9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 55px;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 420px;
+          color: #fff;
+        }
+        .content .title img {
+          width: 28px;
+        }
+        .content .down-flot {
+          right: 440px;
+          top: 215px;
+        }
+        .content .down-flot .img1 {
+          width: 138px;
+        }
+        .content .down-flot .img2 {
+          width: 50px;
+          margin-left: 20px;
+        }
+        .content .download {
+          position: fixed;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 600px;
+          line-height: 0;
+          font-size: 0;
+        }
+        .content .download img {
+          width: 80%;
+          margin-left: 10%;
+        }
+
+        .slider {
+          right: calc((100% - 600px) / 2 + 20px) !important;
+          bottom: 20% !important;
+          margin-bottom: 0px !important;
+        }
+      }
+
+      /* --- 社交滑块 --- */
+      .slider {
+        position: fixed;
+        right: 20px;
+        bottom: 50%;
+        margin-bottom: -820px;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.3);
+        padding: 10px;
+        z-index: 99;
+      }
+      .slider a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 5px;
+      }
+      .slider img {
+        width: 50px;
+        height: 50px;
+      }
+      @media screen and (max-width: 768px) {
+        .content {
+          background-size: 100% auto;
+          padding-bottom: 80px;
+        }
+
+        .content .title {
+          width: 100%;
+          background-color: #536bc9;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 58%;
+          color: #fff;
+        }
+        .content .title img {
+          width: 28px;
+          margin-right: 5px;
+        }
+        .content .down3 {
+          margin-top: -14%;
+        }
+        .content .down3 img {
+          width: 100%;
+        }
+
+        .bannerImps img {
+          width: 100%;
+          display: block;
+        }
+
+        .jackpot {
+          margin-top: 60px;
+        }
+
+        .jackpot .contentjack {
+          width: 92%;
+          height: auto;
+          background-size: contain;
+        }
+
+        .jackpot .contentjack .danmu {
+          height: 300px;
+          margin-top: 0;
+        }
+
+        .hotgame img {
+          width: 100%;
+          margin-top: -2% !important;
+        }
+
+        .hotgamebtn {
+          width: 100%;
+          margin-top: -68px;
+        }
+
+        .hotgamebtn img {
+          width: 55%;
+          margin-top: 0;
+        }
+
+        .jackpotbtn img {
+          width: 55%;
+          margin-top: -45px;
+          margin-bottom: 0;
+        }
+
+        .three2403 {
+          margin-top: 30px;
+        }
+
+        .three2403 img {
+          width: 90%;
+        }
+
+        .bt-bg {
+          margin-top: 30px;
+          margin-bottom: 0;
+        }
+
+        .twoicon {
+          width: 90%;
+        }
+
+        .twoicon img {
+          width: 40px;
+          height: 40px;
+        }
+
+        .twoicon span {
+          font-size: 20px;
+          line-height: 40px;
+        }
+
+        .last {
+          width: 100%;
+        }
+
+        .last img {
+          width: 90%;
+          margin-left: 5%;
+        }
+
+        .last .lastdiv {
+          width: 90%;
+          margin-left: 5%;
+          font-size: 14px;
+          line-height: 16px;
+        }
+
+        .last .lastdiv p {
+          font-size: 20px;
+        }
+
+        .download {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          transform: none;
+          width: 80%;
+          margin-left: 10%;
+          height: auto;
+          z-index: 999;
+          line-height: 0;
+          font-size: 0;
+        }
+
+        .download img {
+          width: 100%;
+        }
+
+        .slider {
+          right: 10px;
+          bottom: 120px;
+          margin-bottom: 0;
+        }
+
+        .slider img {
+          width: 44px;
+          height: 44px;
+        }
+      }
+
+      /* 二维码弹窗 */
+      #qr-mask {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: none;
+        z-index: 999999;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #qr-box {
+        width: 80%;
+        max-width: 360px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+
+      #qr-code {
+        width: 160px;
+        height: 160px;
+        margin: 40px auto 35px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bodyC">
+      <div class="content" id="page">
+        <div class="title">
+          <div class="flex">
+            <img src="./assets/images/789.png" alt="" />
+            <div class="flex1">Earn Daily Rewards While You Play</div>
+          </div>
+        </div>
+
+        <div class="bannerImps">
+          <img src="./assets/images/imps1.png" alt="" />
+        </div>
+        <div class="down3">
+          <img id="img-down-top" src="./assets/images/down3.png" alt="" />
+        </div>
+
+        <div class="hotgame">
+          <img src="./assets/images/hotgame1.png" alt="" />
+        </div>
+
+        <div class="hotgamebtn">
+          <img src="./assets/images/daftar.png" alt="" />
+        </div>
+
+        <div class="jackpot">
+          <div class="contentjack">
+            <div class="danmu" id="danmu-container"></div>
+          </div>
+        </div>
+
+        <div class="jackpotbtn">
+          <img src="./assets/images/jacktpot.png" alt="" />
+        </div>
+
+        <div class="three2403">
+          <img src="./assets/images/Group7.png" alt="" />
+        </div>
+
+        <div class="bt-bg">
+          <div class="two">
+            <div class="twoicon">
+              <img src="./assets/images/789.png" alt="" />
+              <span>DiwaSpin</span>
+            </div>
+          </div>
+          <div class="last">
+            <div>
+              <img src="./assets/images/last.png" alt="" />
+              <div class="lastdiv">
+                <p>DiwaSpin</p>
+                DiwaSpin is the biggest gaming app in India based on the number
+                of unity games, special tournaments and formats. DiwaSpin is
+                available only to people above 18 years of age. DiwaSpin is
+                available in all states where permissible by extant law.
+                Consequently, users located in some states may not be able to
+                access our App or its contests. For an updated list of such
+                states, please download the App.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="height: 20px"></div>
+
+        <div class="download" id="download-btn" style="z-index: 9">
+          <img id="img-down-bottom" src="./assets/images/down1.gif" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <a href="https://youtube.com/@diwaspin?si=jiP-4Dwn83G7bTJl">
+        <img src="./assets/icons/youtube_2504965.svg" alt="YT" />
+      </a>
+      <a href="https://www.facebook.com/share/19f2hPzArx/?mibextid=wwXIfr">
+        <img src="./assets/icons/facebook_2504903.svg" alt="FB" />
+      </a>
+      <a href="https://t.me/diwaspin_official">
+        <img src="./assets/icons/telegram_2504941.svg" alt="TG" />
+      </a>
+      <a href="https://whatsapp.com/channel/0029VbDb8m86buMOwl1BAa0A">
+        <img src="./assets/icons/whatsapp_2504957.svg" alt="WA" />
+      </a>
+      <a href="https://www.instagram.com/diwaspinofficial?stkn=MW02cndnd2xtaXQzbA%3D%3D&utm_source=qr">
+        <img src="./assets/icons/instagram_2504918.svg" alt="IG" />
+      </a>
+      <a href="https://diwaspinchat.com">
+        <img src="./assets/icons/headset_8213336.svg" alt="CS" />
+      </a>
+      <a href="#" id="qr-btn" style="display: none">
+        <img class="action-btn" id="qr-btn-img" />
+      </a>
+    </div>
+
+    <div id="qr-mask">
+      <div id="qr-box">
+        <div style="color: #fff; width: 100%; height: 35px; text-align: center; font-size: 22px; font-weight: 500; padding-top: 20px;">
+          Qrcode
+        </div>
+        <div id="qr-code">
+          <img id="qr-img" style="width: 100%; height: 100%; display: none" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      function getSafeParam(key) {
+        const value = urlParams.get(key);
+        if (!value) return null;
+        try {
+          return decodeURIComponent(value);
+        } catch (e) {
+          return value;
+        }
+      }
+
+      const rawPkg = getSafeParam("pkg");
+      const rawChannel = getSafeParam("channel");
+      const pid = getSafeParam("pid");
+      const clickid = getSafeParam("clickid");
+
+      const DEFAULT_APP_PKG = "";
+      const DEFAULT_H5_PKG = "";
+      const DEFAULT_CHANNEL = "";
+      const FALLBACK_CHANNEL = "";
+
+      const pkg = rawPkg || DEFAULT_APP_PKG;
+      const cleanPkg = pkg.replace(/\//g, "");
+      const fileName = `${cleanPkg}`;
+      const fileUrl = "";
+
+      function getFbpid() {
+        const match = document.cookie.match(/(^|;) ?_fbp=([^;]*)(;|$)/);
+        return match ? match[2] : "null";
+      }
+
+      function buildAdjustUrl(a, b, c, d, e, f, g) {
+        return `${a}?campaign=${b}(${c})&adgroup=${d}(${e})&creative=${f}(${g})`;
+      }
+
+      const pageEl = document.getElementById("page");
+      const TIMEOUT = 3000;
+      const VERSION_KEY = "jump_version";
+      const DATA_SOURCES = [];
+
+      let cloudData = null;
+      let READY_TARGET = null;
+      let isJumping = false;
+
+      async function getAvailableDataApi() {
+        for (const d of DATA_SOURCES) {
+          try {
+            const c = new AbortController();
+            setTimeout(() => c.abort(), TIMEOUT);
+            const res = await fetch(`https://${d}/`, {
+              cache: "no-store",
+              signal: c.signal,
+            });
+            JSON.parse(await res.text());
+            return `https://${d}/`;
+          } catch {}
+        }
+        return null;
+      }
+
+      async function checkUrlAlive(domain) {
+        try {
+          const c = new AbortController();
+          setTimeout(() => c.abort(), TIMEOUT);
+          const res = await fetch(`https://${domain}`, {
+            cache: "no-store",
+            signal: c.signal,
+          });
+          return res.ok;
+        } catch {
+          return false;
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", async () => {
+        try {
+          const DATA_API = await getAvailableDataApi();
+          if (!DATA_API) throw "no api";
+
+          const responseText = await (await fetch(DATA_API)).text();
+          cloudData = JSON.parse(responseText);
+          const item = cloudData[0];
+          if (!item || !item.domains) throw "no domains";
+
+          const dataVersion = item.version;
+          const localVersion = localStorage.getItem(VERSION_KEY);
+
+          if (dataVersion && dataVersion !== localVersion) {
+            Object.keys(localStorage).forEach((k) => {
+              if (k.startsWith("domain_")) localStorage.removeItem(k);
+            });
+            localStorage.setItem(VERSION_KEY, dataVersion);
+          }
+
+          let cached = localStorage.getItem("domain_0");
+
+          if (cached && !item.domains.includes(cached)) {
+            cached = null;
+            localStorage.removeItem("domain_0");
+          }
+
+          if (cached) {
+            READY_TARGET = cached;
+          } else {
+            for (const d of item.domains) {
+              if (await checkUrlAlive(d)) {
+                READY_TARGET = d;
+                localStorage.setItem("domain_0", d);
+                break;
+              }
+            }
+          }
+
+          READY_TARGET ||= item.domains[0];
+        } catch (e) {}
+      });
+
+      function getJumpUrl(domain) {
+        const finalParams = new URLSearchParams(window.location.search);
+
+        if (!rawPkg || !rawChannel) {
+          finalParams.set("pkg", DEFAULT_H5_PKG);
+          finalParams.set("channel", FALLBACK_CHANNEL);
+        }
+
+        const currentIndex = finalParams.get("index") || 0;
+        finalParams.set("resIndex", currentIndex);
+
+        return `https://${domain}?${finalParams.toString()}`;
+      }
+
+      function doH5Jump() {
+        if (isJumping) return;
+        isJumping = true;
+        try {
+          if (!READY_TARGET) {
+            isJumping = false;
+            return;
+          }
+          const finalUrl = getJumpUrl(READY_TARGET);
+          window.open(finalUrl, "_blank");
+          setTimeout(() => (isJumping = false), 1500);
+        } catch {
+          isJumping = false;
+        }
+      }
+
+      async function download() {
+        const isIOS = /iphone|ipad|ipod/.test(ua);
+        const isPC = !isAndroid && !isIOS;
+        if (isAndroid || isPC) {
+          const p = Array.from(
+            { length: 7 },
+            (_, i) => getSafeParam(`p${i}`) || "",
+          );
+          const fbclid = getSafeParam("fbclid") || "null";
+          const fbpid = getFbpid();
+
+          const adjhref = "https://app.adjust.com/";
+          let downloadApk =
+            adjhref + buildAdjustUrl(p[0], p[1], p[2], p[3], p[4], p[5], p[6]);
+          downloadApk += "&fbclid=" + (fbclid === "null" ? "" : fbclid);
+          downloadApk += "&fbpid=" + (fbpid === "null" ? "" : fbpid);
+          downloadApk += "&redirect=" + e
